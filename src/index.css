@@ -38,9 +38,9 @@ code {
 }
 
 .green {
-  color: rgb(15, 184, 15);
+  color: rgba(15, 184, 15, 0.881);
 }
 
 .red {
-  color: rgb(208, 43, 43);
+  color: rgba(208, 43, 43, 0.945);
 }
