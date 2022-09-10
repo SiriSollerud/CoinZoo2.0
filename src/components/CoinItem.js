@@ -42,12 +42,12 @@ const CoinItem = (props) => {
   if (checkAnimal && props != null)
     return (
       <tr>
-        <td className="rank">
+        <td className="px-5 py-5 border-b  border-zinc-600 bg-stone-800 text-sm">
           <p className="text-white-600 whitespace-no-wrap">
             <p>{props.coins.market_cap_rank}</p>
           </p>
         </td>
-        <td className="px-5 py-5 border-b  border-gray-200 bg-transparent text-sm">
+        <td className="px-5 py-5 border-b  border-zinc-600 bg-stone-800 text-sm">
           <div className="flex">
             <div className="flex-shrink-0 w-10 h-10">
               <img
@@ -66,20 +66,20 @@ const CoinItem = (props) => {
             </div>
           </div>
         </td>
-        <td className="px-5 py-5 border-b text-center border-gray-200 bg-transparent text-sm">
+        <td className="px-5 py-5 border-b text-center border-zinc-600 bg-stone-800 text-sm">
           <p className="text-white-900 whitespace-no-wrap">
             ${props.coins.current_price.toLocaleString()}
           </p>
         </td>
-        <td className="px-5 py-5 border-b text-center border-gray-200 bg-transparent text-sm">
+        <td className="px-5 py-5 border-b text-center border-zinc-600 bg-stone-800 text-sm">
           <p className="text-white-600 whitespace-no-wrap">{change}</p>
         </td>
-        <td className="px-5 py-5 border-b border-gray-200 bg-transparent text-sm">
+        <td className="px-5 py-5 border-b border-zinc-600 bg-stone-800 text-sm">
           <p className="text-white-600 whitespace-no-wrap">
             ${props.coins.total_volume.toLocaleString()}
           </p>
         </td>
-        <td className="px-5 py-5 border-b border-gray-200 bg-transparent text-sm">
+        <td className="px-5 py-5 border-b border-zinc-600 bg-stone-800 text-sm">
           <p className="text-white-600 whitespace-no-wrap">
             ${props.coins.market_cap.toLocaleString()}
           </p>
