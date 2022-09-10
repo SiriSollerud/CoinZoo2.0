@@ -2,7 +2,7 @@
 
 CoinZoo2.0 is a web app that shows the top crypto coins (based on market cap) that contain some animal name - hence the name CoinZoo! Data fetched from CoinGecko /coins/markets.
 
-In CoinZoo2.0 I tried to improve my original project by using a table instead of flexboxes so that I can align the columns more neatly + I changed how I fetched data from CoinGecko so that I could display more coins.
+In CoinZoo2.0 I tried to improve my original project by using a tailwind table instead of flexboxes so that I can align the columns more neatly + I changed how I fetched data from CoinGecko so that I could display more coins.
 
 Demo:
 
