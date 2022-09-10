@@ -18,7 +18,7 @@ function App() {
   // nor did it have a next, so I ended up testing how many pages 
   // I could get manually until I arrived at 38
   // Improvement idea: make this automatic and check against error?  
-  const pages = 39;
+  const pages = 38;
   
   // not really sure how to do multiple API calls elegantly, but this works for now
   const fetchAll = async () => {
