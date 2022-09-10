@@ -1,0 +1,35 @@
+const bannedCoins = [
+  "quant",
+  "fantom",
+  "frax share",
+  "pirate chain",
+  "ankr reward-bearing staked eth",
+  "stratis",
+  "adshares",
+  "btc standard hashrate token",
+  "share",
+  "rsk infrastructure framework",
+  "cbat",
+  "santos fc fan token",
+  "cratos",
+  "dopex rebate",
+  "ramp",
+  "phantasma",
+  "canto",
+  "defigram",
+  "mantra",
+  "assetmantle",
+  "battle world",
+  "powerpool concentrated voting power",
+  "quadrant protocol",
+  "cellframe",
+  "index cooperative",
+  "santiment network",
+  "antimatter",
+  "signum",
+  "stratos",
+  "myconstant"
+ 
+];
+
+export { bannedCoins };
