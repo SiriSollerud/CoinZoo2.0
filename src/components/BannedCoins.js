@@ -67,6 +67,11 @@ const bannedCoins = [
   "elpis battle",
   "iteration syndicate",
   "demole",
+  "nami corporation",
+  "flypme",
+  "papel",
+  "football battle",
+  "signaturechain"
 ];
 
 export { bannedCoins };
