@@ -5,6 +5,7 @@ CoinZoo2.0 is a web app that shows the top crypto coins (based on market cap) th
 In CoinZoo2.0 I tried to improve my original project by using a table instead of flexboxes so that I can align the columns more neatly + I changed how I fetched data from CoinGecko so that I could display more coins.
 
 Demo:
+
 ![](https://raw.githubusercontent.com/SiriSollerud/CoinZoo2.0/main/src/components/assets/screenScroll.gif)
 
 # Getting Started with Create React App
