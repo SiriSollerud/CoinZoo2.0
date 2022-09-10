@@ -41,7 +41,7 @@ function App() {
             console.log("NETWORK ERROR");
           }
           else {
-            console.log("SOMETHING ELSE")
+            console.log("CORS ERROR?")
           }
           
         });

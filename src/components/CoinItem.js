@@ -1,7 +1,6 @@
 import React from "react";
 import { animals } from "./AnimalNames";
 import { bannedCoins } from "./BannedCoins";
-import { FiArrowUp, FiArrowDown } from "react-icons/fi";
 
 //TODO:change to bannedCoins instead and have full coin name?
 

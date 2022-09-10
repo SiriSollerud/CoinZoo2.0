@@ -1,16 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: xx-large;
+  font-weight: bolder;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 .icon {
   font-size: 2rem;
-  color:#ff9100
+  color: #ff9100;
 }
 
 .orange {
-  color:#ff9100
+  color: #ff9100;
 }
-
