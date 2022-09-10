@@ -4,6 +4,10 @@ import Coins from "./components/Coins";
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 
+function isNetworkError(err) {
+  return !!err.isAxiosError && !err.response;
+}
+
 function App() {
   const [coins, setCoins] = useState([]);
 
@@ -28,14 +32,23 @@ function App() {
         .then((response) => {
           setCoins((coins) => [...coins, ...response.data]);
         })
+        //TODO: fix network error:
+        /* has been blocked by CORS policy: 
+        No 'Access-Control-Allow-Origin' header 
+        is present on the requested resource. */
         .catch((error) => {
-          console.log(error);
+          if (isNetworkError(error)) {
+            console.log("NETWORK ERROR");
+          }
+          else {
+            console.log("SOMETHING ELSE")
+          }
+          
         });
     }
   };
 
   useEffect(() => {
-    console.log(strictReactCount);
     if (strictReactCount > 0) {
       fetchAll();
     }
@@ -51,23 +64,23 @@ function App() {
             <table className="min-w-full leading-normal ">
               <thead>
                 <tr>
-                  <th className="sticky top-0 px-5 py-3 border-b-2 border-zinc-600 bg-stone-900 text-center text-xs font-semibold text-stone-100 uppercase tracking-wider">
+                  <th className="sticky top-0 px-5 py-3 border-b-2 border-zinc-600 bg-stone-900 text-center text-xs font-semibold text-stone-200 uppercase tracking-wider">
                     #
                   </th>
-                  <th className="sticky top-0 px-5 py-3 border-b-2 border-zinc-600 bg-stone-900 text-center text-xs font-semibold text-stone-100 uppercase tracking-wider">
+                  <th className="sticky top-0 px-5 py-3 border-b-2 border-zinc-600 bg-stone-900 text-left text-xs font-semibold text-stone-200 uppercase tracking-wider">
                     Coin
                   </th>
 
-                  <th className="sticky top-0 px-5 py-3 border-b-2 border-zinc-600 bg-stone-900 text-center text-xs font-semibold text-stone-100 uppercase tracking-wider">
+                  <th className="sticky top-0 px-5 py-3 border-b-2 border-zinc-600 bg-stone-900 text-center text-xs font-semibold text-stone-200 uppercase tracking-wider">
                     Price
                   </th>
-                  <th className="sticky top-0 px-5 py-3 border-b-2 border-zinc-600 bg-stone-900 text-center text-xs font-semibold text-stone-100 uppercase tracking-wider">
+                  <th className="sticky top-0 px-5 py-3 border-b-2 border-zinc-600 bg-stone-900 text-center text-xs font-semibold text-stone-200 uppercase tracking-wider">
                     24h Change
                   </th>
-                  <th className="sticky top-0 px-5 py-3 border-b-2 border-zinc-600 bg-stone-900 text-center text-xs font-semibold text-stone-100 uppercase tracking-wider">
+                  <th className="sticky top-0 px-5 py-3 border-b-2 border-zinc-600 bg-stone-900 text-center text-xs font-semibold text-stone-200 uppercase tracking-wider">
                     Volume
                   </th>
-                  <th className="sticky top-0px-5 py-3 border-b-2 border-zinc-600 bg-stone-900 text-left text-xs font-semibold text-stone-100 uppercase tracking-wider">
+                  <th className="sticky top-0px-5 py-3 border-b-2 border-zinc-600 bg-stone-900 text-left text-xs font-semibold text-stone-200 uppercase tracking-wider">
                     Market Cap
                   </th>
                 </tr>
